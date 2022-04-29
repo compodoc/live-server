@@ -50,6 +50,7 @@ function staticServer(root) {
 			new RegExp("</body>", "i"),
 			new RegExp("</svg>"),
 			new RegExp("</head>", "i"),
+			new RegExp("[^$]*$", "mg"),
 		];
 		var injectTag = null;
 
