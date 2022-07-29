@@ -368,10 +368,10 @@ LiveServer.start = function (options) {
 		if (openPath !== null)
 			if (typeof openPath === "object") {
 				openPath.forEach(function (p) {
-					open(openURL + p, { app: browser });
+					open(openURL + p, { app: { name: browser } });
 				});
 			} else {
-				open(openURL + openPath, { app: browser });
+				open(openURL + openPath, { app: { name: browser } });
 			}
 	});
 
